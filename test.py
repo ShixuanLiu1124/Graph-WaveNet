@@ -9,7 +9,7 @@ import seaborn as sns
 parser = argparse.ArgumentParser()
 parser.add_argument('--device',type=str,default='cuda:3',help='')
 parser.add_argument('--data',type=str,default='data/METR-LA',help='data path')
-parser.add_argument('--adjdata',type=str,default='data/sensor_graph/adj_mx.pkl',help='adj data path')
+parser.add_argument('--adjdata',type=str,default='data/sensor_graph/adj_METR-LA.pkl',help='adj data path')
 parser.add_argument('--adjtype',type=str,default='doubletransition',help='adj type')
 parser.add_argument('--gcn_bool',action='store_true',help='whether to add graph convolution layer')
 parser.add_argument('--aptonly',action='store_true',help='whether only adaptive adj')
